@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class DashboardPage {
+	
+	private By quickLaunchLocator=By.xpath("//p[contains(normalize-space(),'Quick')]");
 
 	private WebDriver driver;
 
@@ -13,7 +15,7 @@ public class DashboardPage {
 	
 	public String getQuickLaunchText()
 	{
-		return driver.findElement(By.xpath("//p[contains(normalize-space(),'Quick')]")).getText();
+		return driver.findElement(quickLaunchLocator).getText();
 	}
 
 }
