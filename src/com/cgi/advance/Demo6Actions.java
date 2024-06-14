@@ -1,0 +1,25 @@
+package com.cgi.advance;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Demo6Actions {
+
+	public static void main(String[] args) {
+
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		driver.get("https://www.amazon.in/");
+		
+		//mousehover on Fresh
+		//click on Shop all groceries on Amazon
+
+	}
+
+}
